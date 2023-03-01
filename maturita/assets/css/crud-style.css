@@ -1,0 +1,27 @@
+input{
+    max-width: 100%;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: 1px solid #5f5f5f;
+    cursor: pointer;
+}
+
+input:focus-visible{
+    outline: 1px solid #5f5f5f;
+    cursor: pointer;
+}
+
+input:hover{
+    cursor: pointer;
+}
+.create-input{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+textarea:focus-visible{
+    outline: 1px solid #5f5f5f;
+    cursor: pointer;
+}

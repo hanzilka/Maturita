@@ -1,0 +1,219 @@
+.grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100vw - 20%);
+    margin: 0 auto;
+    background: white;
+    flex-direction: row;
+}
+/* book shit */
+.book{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    position: relative;
+    border: 1px solid var(--card-border);
+    border-right: none;
+    border-bottom: none;
+    word-wrap: break-word;
+}
+.book:nth-child(4n){
+    border-right: none;
+}
+.book:nth-child(4n+1){
+    border-left: none;
+}
+.book-cover{
+    display: flex;
+    justify-content: center;
+}
+.book-img-cover{
+    height: 300px;
+    margin-top: 2rem;
+}
+.book-title{
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.book-text{
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+}
+.book-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    justify-content: center;
+    height: calc(100% - 4rem);
+}
+/* form */
+form {
+    display: flex;
+    flex-direction: row;
+}
+.reserve-form{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.button-reserve{
+    text-decoration: none;
+    display: flex;
+    border-color: transparent;
+    border-radius: 4px;
+    box-shadow: var(--green-shadow);
+    width: 50%;
+    height: 2.4rem;
+    padding: 3px;
+    font-size: 1rem;
+    background: var(--green);
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0.5rem 0 2rem 0;
+}
+.unavailable{
+    background: var(--red);
+    box-shadow: var(--red-shadow);
+}
+
+
+.grid-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+ 
+}
+
+.searchbox{
+    width: 50%;
+	background-color: white;
+    display: flex;
+    align-items: center;
+}
+.searchbox form{
+    width: 100%;
+    background: white;
+}
+
+.search-button{
+    background: transparent;
+    border:none;
+    outline: none;
+}
+.search-button:hover{
+    cursor: pointer;
+}
+.search-input {
+    border: none;
+    margin: 5px 5px 5px 5px;
+    font-size: 20px;
+    outline: none;
+    color: #17202A;
+    width: 100%;
+}
+.searchbox button i{
+    font-size: 20px;
+    margin: 0px 10px;
+    color:#000000;
+}
+.infobox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+    
+  }
+.decorative-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: var(--light-red);
+    height: 4rem;
+    line-height: 4rem;
+    margin: 0;
+}
+.category-box{
+    display: flex;
+    width: 15%;
+    background: #e4e1e1;
+    flex-direction: column;
+    min-height: 100vh;
+    border-top: none;
+    border-bottom: none;
+
+}
+.favorite-box{
+    display: flex;
+    height: 2rem;
+    width: 85%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.list-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px 0 1px 2px;
+}
+.list-item i{
+    margin-left: 2px;
+    margin-right: 2px;
+    line-height: 2rem;
+}
+.list-item:hover{
+    border-bottom: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+    background:#ececec;
+}
+.list-item label {
+    display: block;
+    width: 100%;
+}
+.list-item input[type="submit"] {
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .book-row {
+      flex-direction: row;
+      width: 100%;
+      
+    }
+    .book{
+        width: 100%;
+    }
+    .decorative-box {
+      width: 100%;
+    }
+    
+    .infobox{
+      border-radius: 0;
+    }
+    .category-box{
+        width: 100%;
+        min-height: fit-content;
+    }
+    .grid-container {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }

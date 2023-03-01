@@ -1,0 +1,17 @@
+
+.profile-picture{
+    display: flex;
+}
+.profile-informations{
+    display: flex;
+    flex-wrap: column;
+    margin: 0;  
+}
+table{
+    text-align: left;
+    width: clamp(500px, 900px, 1000) !important;
+    margin: 0 !important;
+}
+th, td{
+    text-align: left !important;
+}

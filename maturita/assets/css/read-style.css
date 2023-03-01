@@ -1,0 +1,207 @@
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 70vh;
+  max-height: 200vh;
+  box-shadow: var(--paper-shadow);
+  background: white;
+  width: 100%;
+}
+
+.container-detail {
+  background: white;
+  width: 50%; 
+  min-height: 525px;
+  position: relative;
+}
+
+.container-below {
+  display: flex;
+  width: 100%;
+/*   min-height: 200%; */
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 2rem;
+  line-height: 1.5;
+  justify-content: flex-start;
+  background: rgb(201, 201, 201);
+  
+/* nastylovat aby info bylo v pravo? */
+}
+.container-infobox{
+  display: flex;
+  width: 50%;
+  position: relative;
+  justify-content: flex-start;
+  flex: 1 1 33%;
+}
+
+.read-wrap{
+  width: calc(100vw - 20%);
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.infobox{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+}
+.infobox-informations-1{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: var(--dark-red);
+  height: 1rem;
+  line-height: 1rem;
+  margin: 0;
+}
+.infobox-informations-2{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: var(--light-red);
+  height: 2.5rem;
+  line-height: 1rem;
+  margin: 0;
+}
+.infobox-informations-3{
+  display: flex;
+  align-items: center;
+  background: var(--dark-red);
+  height: 2.5rem;
+  line-height: 1rem;
+  margin: 0;
+}
+.read-input{
+  border:none;
+  background:none;
+  color: white;
+  font-weight: 500;
+}
+.read-input:hover{
+  cursor: pointer;
+}
+.read-input-detail{
+  border: none;
+  background: none;
+  color: black;
+  text-decoration: underline;
+}
+.read-input-detail:hover{
+  cursor: pointer;
+}
+.bookImg{
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 30px;
+  
+}
+.cover{
+  height: 525px;
+  box-shadow: var(--paper-shadow);
+}
+.read-book-name{
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.name{
+  display: inline-block;
+  margin-left: 1rem;
+  line-height: 1em;
+  text-align: left;
+  vertical-align: bottom;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.value{
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6em;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
+  margin-left: 1rem;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+p{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.form-row{
+  display: inline-block;
+  width: 50%;
+}
+.button-group{
+  position: absolute;
+  margin-bottom: 1rem;
+  bottom: 0 !important;
+}
+.read-button{
+  text-decoration: none;
+  display: flex;
+  border-color: transparent;
+  border-radius: 4px;
+  margin-left: 1rem;
+  max-width: 250px;
+  width: 100%;
+  height: 2.4rem;
+  padding: 3px;
+  font-size: 1rem;
+  background: var(--blueish);
+  justify-content: center;
+  align-items: center;
+}
+.read-button:hover{
+  cursor: pointer;
+}
+.read-button:focus{
+  border: 1px var(--darker-blueish) solid;
+}
+@media only screen and (max-width: 900px) {
+  .main-container {
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .container-detail {
+    width: 100%;
+  }
+  
+  .container-infobox {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .container-below{
+    margin: 0;
+  }
+
+  .infobox{
+    border-radius: 0;
+  }
+  
+  .read-wrap {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .name{
+    width: 80%;
+  }
+}
